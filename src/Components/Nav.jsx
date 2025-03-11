@@ -2,7 +2,7 @@ import { navLinks, socialLinks } from "../constants";
 
 const Nav = () => {
   return (
-    <header className="flex px-[12rem] py-4 ">
+    <header className="flex px-[8rem] py-4 ">
       <nav id="nav" className="flex w-full items-center justify-between">
         <a href="#home" className="text-[#03045E] font-k2d p-0 m-0 text-[1.2rem] font-bold text-center">Abdul Rehman</a>
         <ul className="flex justify-between items-center gap-8">

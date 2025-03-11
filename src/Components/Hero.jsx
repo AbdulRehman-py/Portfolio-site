@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-      <section className="mt-20 px-[12rem] py-4 flex justify-between">
+      <section className="mt-[6rem] px-[8rem] py-4 flex justify-between">
         <div>
           <p className="font-semibold font-mono text-blue1">
             <span className="text-blue1 font-mono m-0">Hello, </span>

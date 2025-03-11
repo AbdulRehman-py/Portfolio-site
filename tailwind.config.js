@@ -15,6 +15,9 @@ module.exports = {
         yel: '#FBF8CC',
         darkyel: '#F5EE84',
         darkbrown: '#474306'
+      },
+      padding: {
+        global: '8rem',
       }
     },
   },

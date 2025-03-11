@@ -1,4 +1,4 @@
 import Nav from "./Nav";
 import Hero from "./Hero";
-
-export { Nav, Hero };
+import About from "./About";
+export { Nav, Hero, About };

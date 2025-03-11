@@ -1,4 +1,4 @@
-import { Nav, Hero } from './Components/index.js'
+import { Nav, Hero, About } from './Components/index.js'
 
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <>
      <Nav />
       <Hero />
+      <About />
     </>
   )
 }
