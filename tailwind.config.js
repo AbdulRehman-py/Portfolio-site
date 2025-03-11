@@ -8,9 +8,13 @@ module.exports = {
     extend: {
       fontFamily: {
         k2d: ['K2D', 'sans-serif'],
+        mono1: ['ui-monospace', 'monospace']
       },
-      color: {
-        textblue1: ['#03045E']
+      colors: {
+        blue1: '#03045E',
+        yel: '#FBF8CC',
+        darkyel: '#F5EE84',
+        darkbrown: '#474306'
       }
     },
   },

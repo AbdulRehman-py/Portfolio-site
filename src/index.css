@@ -1,11 +1,15 @@
-/* filepath: c:\Users\ABDUL\OneDrive\Desktop\Portfolio-site\src\index.css */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* filepath: c:\Users\ABDUL\OneDrive\Desktop\Portfolio-site\src\index.css */
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap');
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 
 body {
    background-color: #FBF8CC;

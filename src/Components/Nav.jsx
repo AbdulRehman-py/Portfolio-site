@@ -1,24 +1,22 @@
+import { navLinks, socialLinks } from "../constants";
+
 const Nav = () => {
   return (
-    <header className="flex   px-8 py-4 ">
-      <nav id="nav" className="flex px-8 w-full items-center " >
-      <a href="#home" className="text-[#03045E] font-mono p-0 m-0 text-center mr-auto">Home</a>
+    <header className="flex px-[12rem] py-4 ">
+      <nav id="nav" className="flex w-full items-center justify-between">
+        <a href="#home" className="text-[#03045E] font-k2d p-0 m-0 text-[1.2rem] font-bold text-center">Abdul Rehman</a>
         <ul className="flex justify-between items-center gap-8">
-  
-          <li>
-            <a href="#about" className="text-[#03045E] font-mono">About</a>
-          </li>
-          <li>
-            <a href="#services" className="text-[#03045E] font-mono">Services</a>
-          </li>
-          <li>
-            <a href="#contact" className="text-[#03045E] font-mono">Contact</a>
-          </li>
-          <li>
-            <a href="#projects" className="text-[#03045E] font-mono">Projects</a>
-          </li>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a className="font-k2d text-blue1" href={link.href}>{link.label}</a>
+            </li>
+          ))}
         </ul>
-       
+        <div className="flex gap-6 items-center">
+          {socialLinks.map((link, index) => (
+            <a key={index} href={link.href} className="w-6 h-6 fill-blue1" aria-label={link.alt} dangerouslySetInnerHTML={{ __html: link.svg }}></a>
+          ))}
+        </div>
       </nav>
     </header>
   );
