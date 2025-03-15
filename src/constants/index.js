@@ -52,3 +52,22 @@ export const skillsIcons = [
   },
 
 ]
+
+export const projects = [
+  {
+    title: "BookMark Page",
+    description: "A simple bookmark page where you can save your bookmarks.",
+    image: "/public/book.jpeg",
+  },
+  {
+    title: "Ip Address Tracker",
+    description: "A simple ip address tracker that can track your ip address.",
+    image: "/public/ip.jpeg",
+  },
+  {
+    title: "Multi Step Form",
+    description: "A simple multi step form that can save your data.",
+    image: "/public/form.jpeg",
+  }
+
+];
