@@ -56,18 +56,23 @@ export const skillsIcons = [
 export const projects = [
   {
     title: "BookMark Page",
-    description: "A simple bookmark page where you can save your bookmarks.",
+    description: "A versatile browser extension that allows users to bookmark visited pages, download the extension for various browsers, and access a comprehensive FAQ section.",
     image: "/public/book.jpeg",
+    repourl: "https://github.com/AbdulRehman-py/Book-Mark-Page",
+    liveurl: "https://book-mark-page.vercel.app/"
   },
   {
     title: "Ip Address Tracker",
-    description: "A simple ip address tracker that can track your ip address.",
+    description: "A simple and efficient IP Address Tracker that allows users to track and monitor IP addresses. This project provides real-time data and geolocation information for a given IP address.",
     image: "/public/ip.jpeg",
+    repourl: "https://github.com/AbdulRehman-py/Ip-Address-Tracker",
+    liveurl: "https://ipaddresstracker-qxlw0170b-roger-clarks-projects.vercel.app/"
   },
   {
     title: "Multi Step Form",
-    description: "A simple multi step form that can save your data.",
+    description: "A user-friendly multi-step form with step-by-step navigation, back navigation, summary and confirmation, responsive design, interactive elements, and form validation.",
     image: "/public/form.jpeg",
+    repourl: "https://github.com/AbdulRehman-py/multi-step-form-main",
+    liveurl: "https://multi-step-form-main-pssmfdk7m-roger-clarks-projects.vercel.app/"
   }
-
 ];
