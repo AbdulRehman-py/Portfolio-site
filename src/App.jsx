@@ -1,4 +1,4 @@
-import { Nav, Hero, About ,Skills, Work} from './Components/index.js'
+import { Nav, Hero, About ,Skills, Work, Contact} from './Components/index.js'
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <About />
       <Skills />
       <Work />
+      <Contact />
     </>
   )
 }

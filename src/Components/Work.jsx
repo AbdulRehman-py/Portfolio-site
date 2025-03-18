@@ -1,5 +1,6 @@
 import { projects } from "../constants";
 
+
 const Work = () => {
   return (
     <section className="p-global">
@@ -20,7 +21,7 @@ const Work = () => {
         <h3 className="font-k2d text-4xl mb-20 text-center text-blue1">View Projects</h3>
         <div className="grid col-span-1 gap-20 ">
           {projects.map((project, index) => (
-            <div key={index} className="project-card grid grid-cols-2 gap-4">
+            <div key={index} className="project-card grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div className="flex flex-col">
                 <h3 className="font-mono text-blue1 text-2xl font-semibold">
                   {project.title}
@@ -28,7 +29,7 @@ const Work = () => {
                 <p className="font-mono text-blue1 mt-2">
                   {project.description}
                 </p>
-                <div className="flex gap-2 mt-auto">
+                <div className="flex gap-2 mt-4">
                   <a href={project.repourl} target="_blank" rel="noopener noreferrer">
                     <button className="bg-white px-8 py-2 rounded-lg font-mono text-blue1">Repo</button>
                   </a>
