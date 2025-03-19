@@ -3,7 +3,7 @@ import { projects } from "../constants";
 
 const Work = () => {
   return (
-    <section className="py-[4rem] px-[4rem]  md:p-global">
+    <section id="Work" className="py-[4rem] px-[4rem]  md:p-global">
       <div>
         <h2 className="font-mono text-blue1 m-0 md:text-6xl exsmall:text-3xl text-2xl font-semibold">
           <span>My</span>

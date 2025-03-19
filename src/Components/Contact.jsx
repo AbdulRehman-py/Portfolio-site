@@ -3,8 +3,8 @@
 const Contact = () => {
 return (
     <section className="p-global rounded-lg shadow-lg mt-12 text-center">
-        <h2 className="text-darkyel font-bold md:text-5xl sm:text-3xl text-2xl font-k2d mb-4">Contact</h2>
-        <p className="text-blue1 font-mono text-[0.8rem] sm:text-lg mb-8 text-center">Get in touch with me:</p>
+        <h2 className="text-darkyel font-bold md:text-5xl exsmall:text-3xl text-2xl font-k2d mb-4">Contact</h2>
+        <p className="text-blue1 font-mono text-[0.8rem] exsmall:text-lg mb-8 text-center">Get in touch with me:</p>
         <form className="flex flex-col gap-4 items-center">
             <input
                 type="text"
@@ -18,8 +18,8 @@ return (
             />
             <textarea
                 placeholder="Your Message"
-                className="md:w-[500px] exsmall:w-[200px] sm:w-[350px] p-2  rounded-lg border border-blue1 focus:outline-none focus:ring-2 focus:ring-blue1 text-base"
-                rows="8"
+                className="md:w-[500px] exsmall:w-[350px] w-full p-2  rounded-lg border border-blue1 focus:outline-none focus:ring-2 focus:ring-blue1 text-base"
+                rows="6"
             ></textarea>
             <div className="flex flex-wrap gap-4 items-center justify-center md:gap-[8rem]">
                 <div className="flex items-center ">

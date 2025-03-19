@@ -15,11 +15,13 @@ const Hero = () => {
           </span>
           <div className="flex flex-col gap-4 mt-8">
             <div>
+              <a href="/resume.pdf" download={true}>
               <button
-                className="bg-darkyel border-1-darkbrown outline-none rounded-lg font-mono text-darkbrown px-6 py-2"
+                className="bg-darkyel text-darkbrown font-mono font-bold  rounded-lg hover:bg-darkbrown  hover:text-darkyel transition duration-300 px-6 py-2"
               >
                 Resume
               </button>
+              </a>
             </div>
           </div>
         </div>
