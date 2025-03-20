@@ -29,10 +29,16 @@ const Nav = () => {
   }, []);
 
   return (
-    <header id="Home" className="flex md:px-[8rem] py-4 px-[2rem] exsmall:px-[4rem] relative z-10">
+    <header
+      id="Home"
+      className="flex md:px-[8rem] py-4 px-[2rem] exsmall:px-[4rem] relative z-10"
+    >
       <nav id="nav" className="flex w-full items-center justify-between">
         {/* Logo */}
-        <a href="#Home" className="text-[#03045E] font-k2d p-0 m-0 text-[1rem] font-bold">
+        <a
+          href="#Home"
+          className="text-[#03045E] font-k2d p-0 m-0 text-[1rem] font-bold"
+        >
           Abdul Rehman
         </a>
 
@@ -102,7 +108,7 @@ const Nav = () => {
         <div
           className={`${
             isOpen
-              ? "flex z-30 flex-wrap gap-6 fixed bottom-[12rem] left-1/2 transform -translate-x-1/2"
+              ? "flex z-30 flex-wrap gap-6 fixed bottom-[10rem] left-1/2 transform -translate-x-1/2"
               : "hidden md:flex gap-6 items-center"
           }`}
         >

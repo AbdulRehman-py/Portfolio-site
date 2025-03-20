@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
+    "emailjs-com": "^3.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

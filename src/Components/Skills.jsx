@@ -3,7 +3,7 @@ import { skillsIcons } from "../constants";
 
 const Skills = () => {
   return (
-    <section className="md:p-global px-[4rem] py-[8rem]">
+    <section className="md:p-global exsmall:px-[4rem] px-[1.5rem] sm:px-[4rem] py-[8rem]">
       <h2 className="font-mono font-bold md:text-4xl text-3xl text-darkyel mb-2">Skills</h2>
       <p className="text-blue1 font-mono md:text-[1.1rem] text-[0.9rem]">
         My main area of expertise is front-end development (client-side of the
@@ -15,14 +15,16 @@ const Skills = () => {
       </p>
       <div className="flex items-center justify-between gap-8 flex-wrap">
         {skillsIcons.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center gap-8 mt-8">
+          <div key={index} className="flex flex-col  justify-between gap-8 mt-8">
+           
             <div
-              className="sm:w-[60px] w-[40px] h-[20px] sm:h-[40px] fill-blue1 mb-2"
+              className="sm:w-[60px] w-[40px] h-[20px] grid items-center text-center  sm:h-[40px] fill-blue1 mb-2"
               dangerouslySetInnerHTML={{ __html: skill.svg }}
               aria-label={skill.alt}
             ></div>
             <span className="text-blue1 font-mono">{skill.alt}</span>
-          </div>
+            </div>
+          
         ))}
       </div>
     </section>
