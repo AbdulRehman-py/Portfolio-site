@@ -14,7 +14,10 @@ module.exports = {
         blue1: '#03045E',
         yel: '#FBF8CC',
         darkyel: '#F5EE84',
-        darkbrown: '#474306'
+        darkbrown: '#474306',
+        hoverlightyel: '#FFF4A3', 
+        buttoncolor: "#F5D547",
+        hoverblue: '#0077B6',
       },
       padding: {
         global: '8rem',

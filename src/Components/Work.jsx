@@ -31,10 +31,10 @@ const Work = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <a href={project.repourl} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-white px-[3.2rem] sm:px-8 py-2 rounded-lg font-mono text-blue1">Repo</button>
+                    <button className="bg-blue1 hover:bg-[#00509E] px-[3.3rem] sm:px-8 py-2 rounded-lg font-mono text-base text-white">repo</button>
                   </a>
                   <a href={project.liveurl} target="_blank" rel="noopener noreferrer">
-                    <button className="bg-darkyel px-4 py-2 rounded-lg font-mono text-darkbrown">Live Preview</button>
+                    <button className="bg-buttoncolor hover:bg-hoverlightyel px-4 py-2 rounded-lg font-mono text-darkbrown">Live Preview</button>
                   </a>
                 </div>
               </div>
