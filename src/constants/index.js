@@ -2,6 +2,7 @@ export const navLinks = [
   {href: "#Home", label: "Home"},
   { href: "#about", label: "About" },
   { href: "#Work", label: "Work" },
+  { href: "#contact", label: "Contact" },
  
 ];
 

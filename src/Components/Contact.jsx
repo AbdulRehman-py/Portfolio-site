@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleclick = (e) => {
     e.preventDefault();
-
+  
     // Validate form data
     if (!message.name || !message.email || !message.message) {
       toast.error("Please fill out all fields.", {
@@ -28,27 +28,31 @@ const Contact = () => {
       });
       return;
     }
-
+  
     setIsLoading(true); // Set loading state
-
+  
     // Send the email using EmailJS
     emailjs
       .send(
         "service_e3o4qks", // Your EmailJS Service ID
-        "template_xkkv4nm", // Your EmailJS Template ID
-        message, // The form data
+        "template_jgf5tv8", // Your EmailJS Template ID
+        {
+          name: message.name,
+          email: message.email, // Include the email field here
+          message: message.message,
+        }, // The form data
         "wHeNNgiIN26ocUr5M" // Replace with your EmailJS Public Key
       )
       .then(
         (result) => {
           console.log("Message sent:", result.text);
-
+  
           // Show a success toast notification
           toast.success("Message Sent Successfully!", {
             position: "top-center",
             autoClose: 3000, // Automatically close after 3 seconds
           });
-
+  
           // Reset the form fields
           setMessage({
             name: "",
@@ -58,7 +62,7 @@ const Contact = () => {
         },
         (error) => {
           console.error("Error:", error.text);
-
+  
           // Show an error toast notification
           toast.error("Failed to send the message. Please try again.", {
             position: "top-center",
@@ -70,11 +74,18 @@ const Contact = () => {
         setIsLoading(false); // Reset loading state
       });
   };
-
+  
   return (
-    <section className="sm:p-global p-[5rem] rounded-lg shadow-lg mt-12 flex flex-col items-center justify-center text-center">
-      <h2 className="text-darkyel font-bold md:text-5xl exsmall:text-3xl text-2xl font-k2d mb-4">Contact</h2>
-      <p className="text-blue1 font-mono text-[0.8rem] exsmall:text-lg mb-8 text-center">Get in touch with me:</p>
+    <section
+      id="contact"
+      className="sm:p-global p-[5rem] rounded-lg shadow-lg mt-12 flex flex-col items-center justify-center text-center"
+    >
+      <h2 className="text-darkyel font-bold md:text-5xl exsmall:text-3xl text-2xl font-k2d mb-4">
+        Contact
+      </h2>
+      <p className="text-blue1 font-mono text-[0.8rem] exsmall:text-lg mb-8 text-center">
+        Get in touch with me:
+      </p>
       <form onSubmit={handleclick} className="flex flex-col gap-4 items-center">
         <input
           type="text"
