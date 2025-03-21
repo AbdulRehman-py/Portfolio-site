@@ -13,8 +13,7 @@ const Work = () => {
           Developed scalable and visually appealing web applications, including
           high-profile landing pages, dynamic bookmark pages, and intricate
           multi-step forms using React and Tailwind. Worked on over 20 projects.
-          I am also a Certified Cloud Applied Generative AI Engineer (GenEng)
-          with a keen interest in generative AI.{" "}
+         {" "}
         </p>
       </div>
       <div className="mt-20">
